@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 494568141540-0p5barqi42lcj4tbh8t2o1hl4mh626nr.apps.googleusercontent.com
+            client-secret: r5ob-6q_-QMsEDfNN4lANlAu
+    user:
+      name: test
+      password: test
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: test
+    password: test
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
